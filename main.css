@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.wrapper {
+    height: inherit;
+    display: grid;
+    grid-template-rows: 100px 195px auto 100px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+    text-align: center;
+}
+
+header {
+    grid-area: "header";
+    background-color: blue;
+}
+
+nav {
+    grid-area: "nav";
+}
+
+ul {
+    display: grid;
+    padding: 0;
+    margin: 0;
+    grid-template-columns: 1fr;
+}
+
+li {
+    border: 1px solid black;
+    list-style-type: none;
+    padding: 20px 0;
+}
+
+li:hover {
+    background-color: red;
+}
+
+a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    grid-area: "main";
+    background-color: orange;
+}
+
+footer {
+    grid-area: "footer";
+    background-color: red;
+}
