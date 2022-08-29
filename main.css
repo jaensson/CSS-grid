@@ -18,7 +18,7 @@ body {
 
 header {
     grid-area: "header";
-    background-color: blue;
+    background-color: gray;
 }
 
 nav {
@@ -39,7 +39,7 @@ li {
 }
 
 li:hover {
-    background-color: red;
+    background-color: lightgray;
 }
 
 a {
@@ -49,11 +49,27 @@ a {
 }
 
 main {
+    padding: 50px;
     grid-area: "main";
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "img"
+    "paragraph";
     background-color: orange;
+}
+
+img {
+    border: 1px solid black;
 }
 
 footer {
     grid-area: "footer";
-    background-color: red;
+    background-color: lightgray;
+    display: grid;
+}
+
+p {
+    font-size: 18px;
+    align-self: center;
 }
